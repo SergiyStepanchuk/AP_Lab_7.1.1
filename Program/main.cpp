@@ -38,7 +38,7 @@ void get_sum_count(int** matrix, const int* size, int& sum, int& count) {
 unsigned char get_status(int** matrix, const int* size) {
 	bool has[2] = { false, false };
 
-	for (int i = 0; i < size[0]; i++) {
+	for (int i = 0; i < size[0]-1; i++) {
 		for (int j = i+1; j < size[0]; j++) {
 			if (!has[0] && matrix[j][0] == matrix[i][0]) 
 				has[0] = true;
